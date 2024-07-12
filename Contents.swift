@@ -232,3 +232,129 @@ while roll != 20{
 }
 print("Value found!")
 
+// practicing nested loops
+let options = ["up","down","left","right"]
+let secretoption = ["up","up","right"]
+for i in options{
+    for j in options{
+        for k in options{
+            var attempt = [i,j,k]
+            print("the attempts:\(attempt)")
+            if attempt == secretoption{
+               
+               print("The secretoption \(attempt) is unlocked!")
+
+                
+            }
+            
+        }
+    }
+}
+
+// checkpoint 3 - solving fizzbuzz problem
+// problem statement - goal is to loop from 1 through 100 and for each number,
+// if its multiple of 3 - print "Fizz"
+// if its multiple of 5 - print "Buzz"
+// if its multiple of 3 and 5 - print "FizzBuzz"
+// otherwise, for all numbers - print the respective numbers...
+
+for i in 1...100{
+    if i.isMultiple(of: 3) && i.isMultiple(of: 5){
+        print("FizzBuzz")
+        continue
+    }
+    else if i.isMultiple(of: 3){
+        print("Fizz")
+        continue
+    }
+    else if i.isMultiple(of: 5){
+        print("Buzz")
+    
+    }
+    else{
+        print("No match- \(i)")
+    }
+}
+
+// functions
+func showvalues(number: Int, end: Int){
+    for i in 1...end{
+        print("\(i) * \(number) = \(i * number)")
+    }
+}
+showvalues(number: 2, end: 20)
+
+// return values from funtion
+func letters(letter1: String, letter2: String) -> Bool {
+    return letter1 == letter2
+}
+
+func pythogoras(side1:Double,side2:Double) -> Double{
+   sqrt(side1*side1 + side2*side2) // return statement is not nesccary to mention if the function has only single expression in body. Swift automatically understands that the function returns a value.
+}
+pythogoras(side1: 3.0, side2: 4.0)
+
+// customize paramater names :
+
+//func isUppercase(string: String) -> Bool{
+//    string == string.uppercased()
+//}
+//let string = "HELLO"
+//isUppercase(string: string) // instead by calling this fucntion this way using the underscore
+
+func isUppercase(_ string:String) -> Bool{
+    string == string.uppercased()
+}
+let x = "BYE"
+
+isUppercase(x)
+
+// external and internal paramater names
+
+func tables(for num:Int){
+    for i in 1...10{
+        print("\(i)* \(num) is \(i*num) ")
+    }
+}
+tables(for: 5)
+
+// default values
+var characters = ["lana","hana","juna"]
+print(characters.count)
+characters.removeAll(keepingCapacity: true) // even after removing elements keeps the exisiting capacity of an array for future use if nesscary , by default the bool vlaue is false.
+//print(characters.count)
+characters.isEmpty
+
+
+// checkpoint
+enum SquareRootErrors : Error{
+    case outbound, noroot
+}
+
+func integeres(_ number:Int) throws -> Int{
+    if number<1 || number>10000{
+        throw SquareRootErrors.outbound
+    }
+    
+    for i in 1...10000{
+        if number == i*i{
+            return i
+        }
+    }
+    throw SquareRootErrors.noroot
+    
+}
+    
+let input = 25
+    do{
+        let result = try integeres(input)
+        print("the square root of \(input) is \(result)")
+        
+    }catch SquareRootErrors.outbound {
+        print("error outbound")
+    }catch SquareRootErrors.noroot{
+        print("error - it has no root")
+    }catch {
+        print("unknown error")
+    }
+
