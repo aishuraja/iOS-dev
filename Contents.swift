@@ -342,7 +342,7 @@ func integeres(_ number:Int) throws -> Int{
         }
     }
     throw SquareRootErrors.noroot
-    
+     
 }
     
 let input = 25
@@ -358,3 +358,78 @@ let input = 25
         print("unknown error")
     }
 
+// closure
+
+let team = ["floria", "andria", "Suzan","maria","mathew"]
+let CaptainFirstTeam = team.sorted(by: { (name1: String, name2: String) -> Bool in
+    if name1 == "Suzan"{
+        return true
+    } 
+    else if name2 == "Suzan" {
+        
+        return false
+    }
+    
+    return name1<name2
+    
+})
+print(CaptainFirstTeam)
+
+// tarling closure
+
+let captainFirstTeam = team.sorted{ name1 , name2 in
+    if name1 == "Suzan"{
+        return true
+    }
+    else if name2 == "Suzan" {
+        
+        return false
+    }
+    
+    return name1<name2
+    
+}
+print(captainFirstTeam)
+
+// shorthand syntax for closure
+
+let captainfirstTeam = team.sorted {
+    if $0 == "Suzan"{
+        return true
+    }
+    else if $1 == "Suzan" {
+        
+        return false
+    }
+    
+    return $0<$1
+    
+}
+
+let mONLY = team.filter{$0.hasPrefix("m")}
+print(mONLY)
+
+
+let luckyNumbers = [7,4,38,21,16,15,12,33,31,49]
+
+var evenNumbers = [Int]()
+for i in luckyNumbers{
+    if i/2 == 0{
+        evenNumbers.append(i)
+        
+        
+        
+        
+    }
+    let SortedNumbers = luckyNumbers.sorted { sname1 , sname2 in
+        
+        
+                                        
+        
+        
+        
+        
+    }
+        
+        
+    }
