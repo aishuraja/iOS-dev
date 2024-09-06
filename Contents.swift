@@ -406,30 +406,52 @@ let captainfirstTeam = team.sorted {
     
 }
 
-let mONLY = team.filter{$0.hasPrefix("m")}
-print(mONLY)
+//let mONLY = team.filter{$0.hasPrefix("m")}
+//print(mONLY)
+//
+//
+//let luckyNumbers = [7,4,38,21,16,15,12,33,31,49]
+//
+//var evenNumbers = [Int]()
+//for i in luckyNumbers{
+//    if i/2 == 0{
+//        evenNumbers.append(i)
+//        
+//        
+//        
+//        
+//    }
+//    let SortedNumbers = luckyNumbers.sorted { sname1 , sname2 in2
+//
+//        
+//                                        
+//        
+//        
+//        
+//        
+//    }
+//        
+//        
+//    }
 
+// structure
 
-let luckyNumbers = [7,4,38,21,16,15,12,33,31,49]
+struct Employee {
+    let name:String
+    var vacationRemaining:Int
+    
+   mutating func takeVacation(days:Int){  // mutating allows to read and write the properties.
+        if vacationRemaining > days{
+            vacationRemaining -= days
+            print("im going on vacation")
+            print("Days remaining: \(vacationRemaining)")
+            
+        }else{
+            print("oops, you dont have enough vacation remaining")
+        }
+    }
+}
 
-var evenNumbers = [Int]()
-for i in luckyNumbers{
-    if i/2 == 0{
-        evenNumbers.append(i)
-        
-        
-        
-        
-    }
-    let SortedNumbers = luckyNumbers.sorted { sname1 , sname2 in
-        
-        
-                                        
-        
-        
-        
-        
-    }
-        
-        
-    }
+var siddhu = Employee(name: "siddhu", vacationRemaining: 10)
+siddhu.takeVacation(days: 5)
+print(siddhu.vacationRemaining)
