@@ -6,9 +6,9 @@ This repository serves as my learning journey into iOS mobile development. It co
 
 These are the completed projects that demonstrate various aspects of iOS development, ranging basic one-page apps to CoreML functionalities. Each project reflects key concepts I’ve learned and applied, showcasing my growing proficiency in building iOS applications.
 
-  - **WeSplit**: A checksplit iOS application _[ Avoid any awkward math at the end of your meal! ]_
-  - **GuessTheFlag** : A small game to guess the countries flag _[I’ve personally developed the ability to identify various country flags]_
-  - **BetterRest** : An application to predict your ideal sleep time. __[ Trust me , I am using it]_
+  - **WeSplit**: A checksplit iOS application  _[ Avoid any awkward math at the end of your meal! ]_
+  - **GuessTheFlag** : A small game to guess the countries flag  _[I’ve personally developed the ability to identify various country flags]_
+  - **BetterRest** : An application to predict your ideal sleep time.  _[ Trust me , I am using it]_
 
 **Upcoming Projects**
 
