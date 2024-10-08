@@ -1,4 +1,4 @@
-**Main Objectuve:**
+**Main Objective:**
 
 This repository serves as my learning journey into iOS mobile development. It contains several small, one-page projects that demonstrate fundamental concepts and techniques in iOS development. As I continue to expand my skills, I plan to build more complex, data-driven applications and integrate larger projects into this repository. This will allow me to showcase my progress and explore advanced topics such as persistent data storage, networking, and performance optimization.
 
