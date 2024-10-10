@@ -12,4 +12,4 @@ These are the completed projects that demonstrate various aspects of iOS develop
 
 **Upcoming Projects**
 
-Its a surprise! So,you better follow me to know more lol! 
+Its a surprise! So,you better follow me to know more lol!!
