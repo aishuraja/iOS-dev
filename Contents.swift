@@ -455,3 +455,288 @@ struct Employee {
 var siddhu = Employee(name: "siddhu", vacationRemaining: 10)
 siddhu.takeVacation(days: 5)
 print(siddhu.vacationRemaining)
+
+
+
+
+
+
+
+
+// clear explanation topicwise - for my practice and reference 
+
+import Cocoa
+
+// 1. Creating contants and variables:
+
+    // var is mutable - can be changed any time
+var name = "Aishu"
+print(name)
+
+    // let is constant - can't be changed
+let name_1 = "Raja"
+print(name_1)
+name = "Aishwarya" // will change aishu to aishwarya
+    // name_1 = "raja" // wont change Raja to raja bcz its constant (let)
+print("changed name:", name)
+
+
+// 2. Strings:
+
+let actor = "Tom Cruise"
+
+    // Having quotes inside the string - use backslash \"...\"
+
+let quote = "If you \"Believe\" in yourself , the universe \"Gives\" that to you"
+
+    // To span your string in "multiple lines", use three quotes """ ..."""
+
+let movie = """
+A day in
+the life of an
+iOS Engineer
+"""
+print(movie)
+
+
+// string provides a collection of properties and methods to work with
+
+print(actor.count)
+print(quote.hasPrefix("If"))
+print(quote.hasSuffix("You")) // returns false has strings are case sensitive
+
+
+// 3. Integers
+    // performs mathematical operations as well
+let score = 10
+let highestScore = score + 10
+let halvedScore = score / 2
+
+var counter = 10
+counter+=5
+
+let nNumber = 120
+print(nNumber.isMultiple(of: 5))
+
+    // make new intgers in random way of choosing
+let id = Int.random(in: 1...100) // provides any random no between 1 to 100
+
+
+
+// 4. Decimals
+
+let scores = 3.0 // either 3.0 or 3.1 its decimal
+
+// 5. Booleans: True/False
+
+let good = true
+let bad = false
+    // can change true to false or vice versa using toggle()
+var isSaved = false
+isSaved.toggle() // prints true
+
+
+// 6. String interpolation - joining strings [ can create strings with any data and datatype]
+
+let Name = "Aishwarya"
+let age = "23"
+let message = "I am \(name) and my age is \(age)"
+print(message)
+
+
+// 7. Arrays
+
+var colors = ["Red", "Green", "Blue"]
+let Nos = [ 1,2,3]
+var readings = [0.2, 0.3, 0.5]
+
+print(colors[0])
+print(readings[2])
+
+colors.append("white")
+colors.remove(at: 0)
+print(colors)
+print(colors.count)
+
+print(colors.contains("purple"))
+
+
+// 8.Dictionaries:
+
+let employee = [
+    "name":"Ish",
+    "job":"iOS developer"
+    
+
+]
+
+print(employee["job", default: "Unknown"] ) // if job exists prints its value else prints the default value
+
+
+// 9. Sets: similar to arrays and contains no duplicate values and they are unordered
+
+var Numbers = Set([1,2,2,3,4,5,7,7])
+print(Numbers)
+
+    // To insert values use insert() not append as we dont have any orders here ie sets are unordered
+Numbers.insert(10)
+Numbers.contains(11)
+
+// 10. enum - set of named values
+enum Weekday{
+    case monday, tuesday, wednesday
+}
+var day = Weekday.monday
+day = .wednesday
+print(day)
+
+//11. Type annotations: declaring data type
+
+var SCORE: Double = 0
+var player:String = "MSD"
+var luckyNumber:Int = 10
+let pi: Double = 3.14
+var isEnabled: Bool = true
+
+    // to declare arrays, dict , set
+
+var Colorss: Array<String> = ["Red", "Blue", "Green"]
+var user: Dictionary<String, String> = ["id":"@Aishhhh"]
+var books: Set<String> = Set(["The Bluest eye", "Foundation"])
+
+    // above have special syntax - shorthand
+
+var Colorz: [String] = ["Red", "Blue", "Green"]
+var Users: [String:String] = ["id":"@Aishhhh"]
+
+    // create an empty array
+var teams: [String] = [String]()
+    // or remove type annotation
+var clues = [String]()
+
+    // same for enum declarin its type
+enum UIStyle{
+    case light, dark , system
+}
+
+var style: UIStyle = .light
+
+
+// 12. Conditions: if , else if, else
+let Age = 18
+if Age < 12{
+    print("You can't vote!")
+} else if Age < 18{
+    print("You can vote soon!")
+} else {
+    print("You can vote!")
+}
+
+let temp = 26
+// and
+if temp > 20 && temp < 30{
+    print("Its a nice day!")
+}
+
+// or
+if temp > 20 || temp < 30{
+    print("Its a nice day!")
+}
+
+
+// 13. Switch - check a value against multiple conditions using switch
+    // Switch must be exhaustive - must have one case for each value on your enum
+
+enum Weather {
+    case sun ,rain , wind
+}
+
+let forecast = Weather.sun
+
+switch forecast{
+case .sun:
+    print("Its hot day")
+case . rain:
+    print("Pack an umbrella")
+default:
+    print("Should be okay")
+}
+
+
+// 14. ternary condition : WTF - what (set condition)?? True or False
+let AGE = 18
+let canVote = AGE>=18 ? "Yes" : "No"
+print(canVote)
+
+
+// 15. Loops
+let platforms = ["macOS","iOS","tvOS", "watchOS"]
+
+for os in platforms{
+    print("Swift works on \(os)")
+}
+// range
+for i in 1...12{
+    print("5 x \(i) is \(5*i) ")
+}
+var lyrics = "Haters gonna"
+// not use i
+for _ in 1..<5{
+    lyrics += " hate"
+}
+print(lyrics)
+
+// while - excutes as long as condition is true
+var count = 10
+while count > 0 {
+    print("\(count)..")
+    count -= 1
+
+}
+
+// Functions
+
+func prinTimesTable(number:Int){
+    for i in 1...12{
+        print("number \(i)")
+    }
+    
+}
+prinTimesTable(number: 8)
+
+// return
+func rollDice() -> Int {
+//    return Int.random(in: 1...6) - if single line no return is needed
+    Int.random(in: 1...6)
+}
+let result = rollDice()
+print(result)
+
+
+// Returning multiple values from a fucntion
+func getUser() -> (firstName:String, lastName: String){
+    (firstName:"Aishwarya", lastName: "Raja")
+}
+let usr = getUser()
+print("Name: \(usr.firstName) \(usr.lastName)")
+
+// closure - chunk of code which can be called anytime
+
+let team = ["floria", "andria", "Suzan","maria","mathew"]
+
+let captainFirstTeam = team.sorted{ name1 , name2 in // here in keyword marks the end of the segement with our parameters and return type after that everything is main body of the closure - the actual code
+    if name1 == "Suzan"{
+        return true
+    }
+    else if name2 == "Suzan" {
+        
+        return false
+    }
+    
+    return name1<name2
+    
+}
+print(captainFirstTeam)
+
+
+
