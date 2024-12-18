@@ -9,6 +9,8 @@ These are the completed projects that demonstrate various aspects of iOS develop
   - **WeSplit**: A checksplit iOS application  _[ Avoid any awkward math at the end of your meal! ]_
   - **GuessTheFlag** : A small game to guess the countries flag  _[I’ve personally developed the ability to identify various country flags]_
   - **BetterRest** : An application to predict your ideal sleep time.  _[ Trust me , I am using it]_
+  - **TwistyWords** : This is a interesting game which shows a player random 8 letter word and ask them to make words out of it. _[ Try to make a proper english word from the rootword, Be original!]_
+  - **WaveNest** : Long Audio Player app. So whats unique? Now you can bookmark your fav spots. _[I love to bookmark , which prevents me from drag/drop ]_
 
 **Upcoming Projects**
 
