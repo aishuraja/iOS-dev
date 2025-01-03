@@ -19,7 +19,7 @@ struct Expenses : Identifiable, Codable {
 class ExpenseTrack {
     // Array of expenses
     var items = [Expenses]() {
-        didSet{ // didset property observer looks for changes in items property and write it out. 
+        didSet{ // didset property observer looks for changes in items property and write it out
             if let encoded = try? JSONEncoder().encode(items){
                 UserDefaults.standard.set(encoded, forKey: "Items")
             }

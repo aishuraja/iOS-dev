@@ -21,6 +21,7 @@
 		89FD36802D1CA693009DB03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89FD36832D1CA693009DB03F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89FD368A2D208D8F009DB03F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		89FD368C2D2799CE009DB03F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 				89FD368A2D208D8F009DB03F /* AddView.swift */,
 				89FD36802D1CA693009DB03F /* Assets.xcassets */,
 				89FD36822D1CA693009DB03F /* Preview Content */,
+				89FD368C2D2799CE009DB03F /* README.md */,
 			);
 			path = PocketPlan;
 			sourceTree = "<group>";
