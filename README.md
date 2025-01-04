@@ -11,7 +11,8 @@ These are the completed projects that demonstrate various aspects of iOS develop
   - **BetterRest** : An application to predict your ideal sleep time.  _[ Trust me , I am using it]_
   - **TwistyWords** : This is a interesting game which shows a player random 8 letter word and ask them to make words out of it. _[ Try to make a proper english word from the rootword, Be original!]_
   - **WaveNest** : Long Audio Player app. So whats unique? Now you can bookmark your fav spots. _[I love to bookmark , which prevents me from drag/drop ]_
+  - **PocketPlan** : Expense Tracker app. Its so simple to track your expense and userfriendly 
 
 **Upcoming Projects**
 
-Its a surprise! So,you better follow me to know more lol!!
+Its a surprise! So,you better follow me to know more lol!
