@@ -6,47 +6,83 @@
 //
 
 import SwiftUI
-import Foundation
-
-//// step 1 : Model - Define the struct of this app
-//struct Recipe: Decodable, Identifiable{
-//    let id : UUID
-//    let name: String
-//    let cuisine : String
-//    let photoURLLarge : URL?
-//    let photoURLSmall : URL?
-//    let sourceURL :URL?
-//    let youtubeURL : URL?
-//    
-//    enum CodingKeys : String,CodingKey {
-//        case id = "uuid"
-//        case name
-//        case cuisine
-//        case photoURLLarge = "photo_url_large"
-//        case photoURLSmall = "photo_url_small"
-//        case sourceURL = "source_url"
-//        case youtubeURL = "youtube_url"
-//        
-//    }
-//    
-//}
-
-// step 2 : ImageCache - This class is for managing and saving pictures
-
-
 
 struct ContentView: View {
+    @StateObject private var viewModel = RecipeViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                VStack {
+                    if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .foregroundColor(.red)
+                            .padding()
+                    } else if viewModel.recipes.isEmpty {
+                        Text("No recipes available.")
+                            .foregroundColor(.gray)
+                            .padding()
+                    } else {
+                        List(viewModel.recipes) { recipe in
+                            RecipeRow(recipe: recipe, viewModel: viewModel)
+                        }
+                        .listStyle(.plain)
+                        .refreshable { // Pull-to-refresh
+                            print("Pull-to-refresh triggered")
+                            await viewModel.fetchRecipes()
+                        }
+                    }
+                }
+
+                // Loading Spinner
+                if viewModel.isLoading {
+                    ProgressView("Loading...")
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(10)
+                        .padding()
+                }
+
+//                // Floating Refresh Button
+//                VStack {
+//                    Spacer()
+//                    HStack {
+//                        Spacer()
+//                        Button(action: {
+//                            Task {
+//                                await viewModel.fetchRecipes()
+//                            }
+//                        }) {
+//                            Image(systemName: "arrow.clockwise")
+//                                .foregroundColor(.white)
+//                                .padding()
+//                                .background(Color.blue)
+//                                .clipShape(Circle())
+//                                .shadow(radius: 10)
+//                        }
+//                        .padding()
+//                    }
+//                }
+            }
+            .navigationTitle("Recipes")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        Task {
+                            await viewModel.fetchRecipes()
+                        }
+                    }) {
+                        Image(systemName: "arrow.clockwise")
+                    }
+                }
+            }
         }
-        .padding()
+        .task {
+            await viewModel.fetchRecipes()
+        }
     }
 }
 
+
 #Preview {
-    ContentView()
-}
+    ContentView()}

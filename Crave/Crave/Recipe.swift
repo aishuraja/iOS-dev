@@ -16,6 +16,7 @@ struct Recipe: Decodable, Identifiable{
     let photoURLSmall : URL?
     let sourceURL :URL?
     let youtubeURL : URL?
+    let description: String?
     
     enum CodingKeys : String,CodingKey {
         case id = "uuid"
@@ -25,6 +26,7 @@ struct Recipe: Decodable, Identifiable{
         case photoURLSmall = "photo_url_small"
         case sourceURL = "source_url"
         case youtubeURL = "youtube_url"
+        case description
         
     }
     

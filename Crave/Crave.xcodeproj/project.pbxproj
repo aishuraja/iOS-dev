@@ -15,7 +15,20 @@
 		89868B952D34826900794663 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89868B942D34826900794663 /* Recipe.swift */; };
 		89868B972D34828200794663 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89868B962D34828200794663 /* ImageCache.swift */; };
 		89868B992D3482B800794663 /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89868B982D3482B800794663 /* RecipeRow.swift */; };
+		89BDAF762D35C84F009D1DDA /* CraveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF752D35C84F009D1DDA /* CraveTests.swift */; };
+		89BDAF7F2D35F266009D1DDA /* RecipeDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */; };
+		89BDAF812D35F290009D1DDA /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF802D35F290009D1DDA /* YouTubeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89BDAF772D35C84F009D1DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89868B772D322AA400794663 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89868B7E2D322AA400794663;
+			remoteInfo = Crave;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		89868B7F2D322AA400794663 /* Crave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crave.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +40,21 @@
 		89868B942D34826900794663 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		89868B962D34828200794663 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		89868B982D3482B800794663 /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
+		89BDAF732D35C84F009D1DDA /* CraveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BDAF752D35C84F009D1DDA /* CraveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraveTests.swift; sourceTree = "<group>"; };
+		89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailedView.swift; sourceTree = "<group>"; };
+		89BDAF802D35F290009D1DDA /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89868B7C2D322AA400794663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BDAF702D35C84F009D1DDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				89868B812D322AA400794663 /* Crave */,
+				89BDAF742D35C84F009D1DDA /* CraveTests */,
 				89868B802D322AA400794663 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				89868B7F2D322AA400794663 /* Crave.app */,
+				89BDAF732D35C84F009D1DDA /* CraveTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +88,8 @@
 				89868B822D322AA400794663 /* CraveApp.swift */,
 				89868B962D34828200794663 /* ImageCache.swift */,
 				89868B982D3482B800794663 /* RecipeRow.swift */,
+				89BDAF802D35F290009D1DDA /* YouTubeView.swift */,
+				89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */,
 				89868B942D34826900794663 /* Recipe.swift */,
 				89868B922D34823F00794663 /* RecipeViewModel.swift */,
 				89868B842D322AA400794663 /* ContentView.swift */,
@@ -77,6 +105,14 @@
 				89868B892D322AA500794663 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89BDAF742D35C84F009D1DDA /* CraveTests */ = {
+			isa = PBXGroup;
+			children = (
+				89BDAF752D35C84F009D1DDA /* CraveTests.swift */,
+			);
+			path = CraveTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +135,24 @@
 			productReference = 89868B7F2D322AA400794663 /* Crave.app */;
 			productType = "com.apple.product-type.application";
 		};
+		89BDAF722D35C84F009D1DDA /* CraveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89BDAF7B2D35C84F009D1DDA /* Build configuration list for PBXNativeTarget "CraveTests" */;
+			buildPhases = (
+				89BDAF6F2D35C84F009D1DDA /* Sources */,
+				89BDAF702D35C84F009D1DDA /* Frameworks */,
+				89BDAF712D35C84F009D1DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89BDAF782D35C84F009D1DDA /* PBXTargetDependency */,
+			);
+			name = CraveTests;
+			productName = CraveTests;
+			productReference = 89BDAF732D35C84F009D1DDA /* CraveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +165,10 @@
 				TargetAttributes = {
 					89868B7E2D322AA400794663 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					89BDAF722D35C84F009D1DDA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 89868B7E2D322AA400794663;
 					};
 				};
 			};
@@ -128,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				89868B7E2D322AA400794663 /* Crave */,
+				89BDAF722D35C84F009D1DDA /* CraveTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +201,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89BDAF712D35C84F009D1DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -151,6 +217,8 @@
 			files = (
 				89868B972D34828200794663 /* ImageCache.swift in Sources */,
 				89868B932D34823F00794663 /* RecipeViewModel.swift in Sources */,
+				89BDAF812D35F290009D1DDA /* YouTubeView.swift in Sources */,
+				89BDAF7F2D35F266009D1DDA /* RecipeDetailedView.swift in Sources */,
 				89868B992D3482B800794663 /* RecipeRow.swift in Sources */,
 				89868B852D322AA400794663 /* ContentView.swift in Sources */,
 				89868B832D322AA400794663 /* CraveApp.swift in Sources */,
@@ -158,7 +226,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89BDAF6F2D35C84F009D1DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BDAF762D35C84F009D1DDA /* CraveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89BDAF782D35C84F009D1DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89868B7E2D322AA400794663 /* Crave */;
+			targetProxy = 89BDAF772D35C84F009D1DDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		89868B8B2D322AA500794663 /* Debug */ = {
@@ -336,6 +420,40 @@
 			};
 			name = Release;
 		};
+		89BDAF792D35C84F009D1DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aishwaryaraja.CraveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crave";
+			};
+			name = Debug;
+		};
+		89BDAF7A2D35C84F009D1DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aishwaryaraja.CraveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crave";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +471,15 @@
 			buildConfigurations = (
 				89868B8E2D322AA500794663 /* Debug */,
 				89868B8F2D322AA500794663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89BDAF7B2D35C84F009D1DDA /* Build configuration list for PBXNativeTarget "CraveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89BDAF792D35C84F009D1DDA /* Debug */,
+				89BDAF7A2D35C84F009D1DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
