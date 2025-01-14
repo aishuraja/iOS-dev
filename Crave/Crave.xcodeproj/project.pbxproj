@@ -47,6 +47,7 @@
 		89BDAF802D35F290009D1DDA /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		89BDAF842D3633CF009D1DDA /* FeaturedRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRecipeCard.swift; sourceTree = "<group>"; };
 		89BDAF862D364B48009D1DDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		89BDAF872D365465009D1DDA /* Crave.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crave.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 				89BDAF842D3633CF009D1DDA /* FeaturedRecipeCard.swift */,
 				89868B942D34826900794663 /* Recipe.swift */,
 				89BDAF862D364B48009D1DDA /* README.md */,
+				89BDAF872D365465009D1DDA /* Crave.mp4 */,
 				89868B922D34823F00794663 /* RecipeViewModel.swift */,
 				89868B842D322AA400794663 /* ContentView.swift */,
 				89868B862D322AA500794663 /* Assets.xcassets */,
