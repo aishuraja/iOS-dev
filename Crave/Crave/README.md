@@ -7,7 +7,7 @@ Crave is a sleek and user-friendly iOS app that makes discovering recipes from d
 
 ## Summary:
 
-### Demo video: [here](./Crave.mp4)
+### Demo video: [![here]](./Crave.mp4)
 
 Crave is a feature-rich application with a clean and intuitive interface. Here are the key highlights of the app:
 
