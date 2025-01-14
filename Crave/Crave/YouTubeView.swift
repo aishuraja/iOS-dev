@@ -13,4 +13,3 @@ struct YouTubeView: UIViewRepresentable {
         uiView.load(request)
     }
 }
-

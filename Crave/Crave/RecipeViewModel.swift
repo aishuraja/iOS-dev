@@ -15,8 +15,13 @@ import UIKit
 @MainActor
 class RecipeViewModel : ObservableObject{
     @Published var recipes : [Recipe] = []
+    var featuredRecipes: [Recipe] {
+        Array(recipes.shuffled().prefix(3))
+    }
     @Published var errorMessage : String?
     @Published var isLoading: Bool = false
+    // Search Text for Filtering Recipes
+        @Published var searchText: String = ""
     private let cache = ImageCache() // instance of the imagecache class
     
     // fetchRecipes method

@@ -18,6 +18,7 @@
 		89BDAF762D35C84F009D1DDA /* CraveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF752D35C84F009D1DDA /* CraveTests.swift */; };
 		89BDAF7F2D35F266009D1DDA /* RecipeDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */; };
 		89BDAF812D35F290009D1DDA /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF802D35F290009D1DDA /* YouTubeView.swift */; };
+		89BDAF852D3633CF009D1DDA /* FeaturedRecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BDAF842D3633CF009D1DDA /* FeaturedRecipeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		89BDAF752D35C84F009D1DDA /* CraveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraveTests.swift; sourceTree = "<group>"; };
 		89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailedView.swift; sourceTree = "<group>"; };
 		89BDAF802D35F290009D1DDA /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
+		89BDAF842D3633CF009D1DDA /* FeaturedRecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRecipeCard.swift; sourceTree = "<group>"; };
+		89BDAF862D364B48009D1DDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +93,9 @@
 				89868B982D3482B800794663 /* RecipeRow.swift */,
 				89BDAF802D35F290009D1DDA /* YouTubeView.swift */,
 				89BDAF7E2D35F266009D1DDA /* RecipeDetailedView.swift */,
+				89BDAF842D3633CF009D1DDA /* FeaturedRecipeCard.swift */,
 				89868B942D34826900794663 /* Recipe.swift */,
+				89BDAF862D364B48009D1DDA /* README.md */,
 				89868B922D34823F00794663 /* RecipeViewModel.swift */,
 				89868B842D322AA400794663 /* ContentView.swift */,
 				89868B862D322AA500794663 /* Assets.xcassets */,
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89868B972D34828200794663 /* ImageCache.swift in Sources */,
+				89BDAF852D3633CF009D1DDA /* FeaturedRecipeCard.swift in Sources */,
 				89868B932D34823F00794663 /* RecipeViewModel.swift in Sources */,
 				89BDAF812D35F290009D1DDA /* YouTubeView.swift in Sources */,
 				89BDAF7F2D35F266009D1DDA /* RecipeDetailedView.swift in Sources */,
